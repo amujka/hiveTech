@@ -3,7 +3,7 @@ import Employee from '../model/employee.js'
 export const getEmployeesController=async(req,res)=>{
     try {
         const allEmployees=await Employee.find();
-        console.log(allEmployees);
+        //console.log(allEmployees);
          res.status(200).json(allEmployees);
     } catch (error) {
          res.status(404).json({ message: error });
