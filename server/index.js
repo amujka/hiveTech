@@ -7,6 +7,7 @@ app.use(cors());
 app.use(express.json()) // To parse the incoming requests with JSON payloads
 
 app.use(express.urlencoded({extended: true}));
+
 app.use('/hiveTech',routes);
 
 const PORT=process.env.PORT || 5000;

@@ -7,6 +7,7 @@ import {BrowserRouter as Router,
   import {useDispatch} from 'react-redux'
 import { useEffect } from 'react'
 import{getEmployeesAction} from './store/actions/employeesActions'
+import Header from './components/header/Header'
 function App() {
 
 
@@ -20,7 +21,7 @@ useEffect(() => {
   return (
     <Router>
           <div className="App">
-           
+           <Header/>
             <Switch>
               <Route path="/" exact>
                 <EmployeesList/>
